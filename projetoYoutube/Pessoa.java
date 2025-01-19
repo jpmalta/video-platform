@@ -1,6 +1,6 @@
 package projetoYoutube;
 
-public abstract class Pessoa {
+public class Pessoa {
     protected String nome;
     protected int idade;
     protected String sexo;
@@ -45,5 +45,15 @@ public abstract class Pessoa {
 
     public void setExperiencia(float experiencia) {
         this.experiencia = experiencia;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "\nnome='" + nome + '\'' +
+                ", \nidade=" + idade +
+                ", \nsexo='" + sexo + '\'' +
+                ", \nexperiencia=" + experiencia +
+                '}';
     }
 }
