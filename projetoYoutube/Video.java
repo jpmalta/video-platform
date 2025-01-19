@@ -1,3 +1,5 @@
+package projetoYoutube;
+
 public class Video implements AcoesVideo{
     private String titulo;
     private int avaliacao;
@@ -6,13 +8,14 @@ public class Video implements AcoesVideo{
     private boolean reproduzindo;
 
     // Construtor - método que é instanciado assim que se inicia um objeto.
-    public video(String titulo) {
+    public Video(String titulo) {
         this.titulo = titulo;
         this.avaliacao = 1;
         this.views = 0;
         this.reproduzindo = false;
     }
 
+    //Getters e setters
      public String getTitulo() {
         return titulo;
     }
