@@ -70,4 +70,10 @@ public class Video implements AcoesVideo{
     public void like() {
 
     }
+
+    //Polimorfismo de sobreposição - Utilizamos o override para sobrescrever um método
+    @Override
+    public String toString() {
+        return "Video{" + "titulo=" + titulo + ", avaliação=" + avaliacao + ", views= " + views + ", curtidas=" + curtidas + ", reproduzindo=" + reproduzindo + "}";
+    }
 }
