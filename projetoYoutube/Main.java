@@ -10,13 +10,14 @@ public class Main {
         g[0] = new Gafanhoto("João Pedro", 20, "M", "jpmaltaa");
         g[1] = new Gafanhoto("Fernanda", 19, "F", "silvfer");
 
-        Visualizacao vis = new Visualizacao(g[0], v[0]);
-        vis.toString();
+        Visualizacao vis[] = new Visualizacao[5];
+        vis[0] = new Visualizacao(g[0], v[0]);
+        vis[0].avaliar();
 
-        System.out.println(v[0].toString());
-        System.out.println("\n\n");
-        System.out.println(g[0].toString());
-        System.out.println("\n\n");
-        System.out.println(vis.toString());
+        //System.out.println(v[0].toString());
+        //System.out.println("\n\n");
+        //System.out.println(g[0].toString());
+        //System.out.println("\n\n");
+        System.out.println(vis[0].toString());
     }
 }
