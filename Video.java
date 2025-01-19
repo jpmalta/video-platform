@@ -5,7 +5,14 @@ public class Video implements AcoesVideo{
     private int curtidas;
     private boolean reproduzindo;
 
-     // Getter e Setter para titulo
+    // Construtor - método que é instanciado assim que se inicia um objeto.
+    public video(String titulo) {
+        this.titulo = titulo;
+        this.avaliacao = 1;
+        this.views = 0;
+        this.reproduzindo = false;
+    }
+
      public String getTitulo() {
         return titulo;
     }
@@ -14,7 +21,6 @@ public class Video implements AcoesVideo{
         this.titulo = titulo;
     }
 
-    // Getter e Setter para avaliacao
     public int getAvaliacao() {
         return avaliacao;
     }
@@ -23,7 +29,6 @@ public class Video implements AcoesVideo{
         this.avaliacao = avaliacao;
     }
 
-    // Getter e Setter para views
     public int getViews() {
         return views;
     }
@@ -32,7 +37,6 @@ public class Video implements AcoesVideo{
         this.views = views;
     }
 
-    // Getter e Setter para curtidas
     public int getCurtidas() {
         return curtidas;
     }
@@ -41,8 +45,7 @@ public class Video implements AcoesVideo{
         this.curtidas = curtidas;
     }
 
-    // Getter e Setter para reproduzindo
-    public boolean isReproduzindo() { // Método para boolean começa com 'is'
+    public boolean isReproduzindo() {
         return reproduzindo;
     }
 
