@@ -13,8 +13,10 @@ public class Main {
         Visualizacao vis = new Visualizacao(g[0], v[0]);
         vis.toString();
 
-        //System.out.println(v[0].toString());
-        //System.out.println(g[0].toString());
+        System.out.println(v[0].toString());
+        System.out.println("\n\n");
+        System.out.println(g[0].toString());
+        System.out.println("\n\n");
         System.out.println(vis.toString());
-    }   
-} 
+    }
+}
